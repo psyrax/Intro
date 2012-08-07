@@ -1,0 +1,147 @@
+body{
+	font-family: 'Jura', sans-serif;
+	background-color: black;
+}
+.contents{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-150px;
+	margin-left:-150px;
+}
+.no-csstransforms3d .spinner div {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ccc;
+	background: rgba(133,219,24,0.8);
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+	color:#F5F6D4;
+	display:inline-table;
+}
+.csstransforms3d .spinner div {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ccc;
+	background: rgba(133,219,24,0.8);
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 280px;
+	font-size: 250px;
+	color:#F5F6D4;
+}
+/*Cubo*/
+/*Webkit*/
+.csstransforms3d .spinner .face1 {-webkit-transform: translateZ(150px);}
+.csstransforms3d .spinner .face2 {-webkit-transform: rotateY(90deg) translateZ(150px); }
+.csstransforms3d .spinner .face3 {-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);  }
+.csstransforms3d .spinner .face4 {-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); }
+.csstransforms3d .spinner .face5 {-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); }
+.csstransforms3d .spinner .face6 { -webkit-transform: rotateX(-90deg) translateZ(150px);}
+@-webkit-keyframes spincube {
+from,to  {}
+16%      { -webkit-transform: rotateY(-90deg);}
+33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg);}
+50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg);}
+66%      { -webkit-transform: rotateY(90deg) rotateX(90deg);}
+83%      { -webkit-transform: rotateX(90deg);}
+}
+.csstransforms .spinner {
+-webkit-animation-name: spincube;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 12s;
+-webkit-transform-style: preserve-3d;
+-webkit-transform-origin: 150px 150px 0;
+}
+/*MOZ*/
+.spinner .face1 {-moz-transform: translateZ(150px);}
+.spinner .face2 {-moz-transform: rotateY(90deg) translateZ(150px); }
+.spinner .face3 {-moz-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);  }
+.spinner .face4 {-moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); }
+.spinner .face5 {-moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); }
+.spinner .face6 {-moz-transform: rotateX(-90deg) translateZ(150px);}
+@-moz-keyframes spincube {
+from,to  {}
+16%      { -moz-transform: rotateY(-90deg);}
+33%      { -moz-transform: rotateY(-90deg) rotateZ(90deg);}
+50%      { -moz-transform: rotateY(180deg) rotateZ(90deg);}
+66%      { -moz-transform: rotateY(90deg) rotateX(90deg);}
+83%      { -moz-transform: rotateX(90deg);}
+}
+.spinner {
+-moz-animation-name: spincube;
+-moz-animation-timing-function: ease-in-out;
+-moz-animation-iteration-count: infinite;
+-moz-animation-duration: 12s;
+-moz-transform-style: preserve-3d;
+-moz-transform-origin: 150px 150px 0;
+}
+/*Opera*/
+.spinner .face1 {-o-transform: translateZ(150px);}
+.spinner .face2 {-o-transform: rotateY(90deg) translateZ(150px); }
+.spinner .face3 {-o-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);  }
+.spinner .face4 {-o-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); }
+.spinner .face5 {-o-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); }
+.spinner .face6 { -o-transform: rotateX(-90deg) translateZ(150px);}
+@-o-keyframes spincube {
+from,to  {}
+16%      { -o-transform: rotateY(-90deg);}
+33%      { -o-transform: rotateY(-90deg) rotateZ(90deg);}
+50%      { -o-transform: rotateY(180deg) rotateZ(90deg);}
+66%      { -o-transform: rotateY(90deg) rotateX(90deg);}
+83%      { -o-transform: rotateX(90deg);}
+}
+.spinner {
+-o-animation-name: spincube;
+-o-animation-timing-function: ease-in-out;
+-o-animation-iteration-count: infinite;
+-o-animation-duration: 12s;
+-o-transform-style: preserve-3d;
+-o-transform-origin: 150px 150px 0;
+}
+/*IE*/
+.spinner .face1 {-ms-transform: translateZ(150px);}
+.spinner .face2 {-ms-transform: rotateY(90deg) translateZ(150px); }
+.spinner .face3 {-ms-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);  }
+.spinner .face4 {-ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); }
+.spinner .face5 {-ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); }
+.spinner .face6 { -ms-transform: rotateX(-90deg) translateZ(150px);}
+@-ms-keyframes spincube {
+from,to  {}
+16%      { -ms-transform: rotateY(-90deg);}
+33%      { -ms-transform: rotateY(-90deg) rotateZ(90deg);}
+50%      { -ms-transform: rotateY(180deg) rotateZ(90deg);}
+66%      { -ms-transform: rotateY(90deg) rotateX(90deg);}
+83%      { -ms-transform: rotateX(90deg);}
+}
+.spinner {
+-ms-animation-name: spincube;
+-ms-animation-timing-function: ease-in-out;
+-ms-animation-iteration-count: infinite;
+-ms-animation-duration: 12s;
+-ms-transform-style: preserve-3d;
+-ms-transform-origin: 150px 150px 0;
+}
+
+
+.ajustador{
+	position: absolute;
+	height:50px;
+	top:30px;
+	width:50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+	color:#F5F6D4;
+	background: rgba(205,232,85,0.8);
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
