@@ -1,6 +1,7 @@
 body{
 	font-family: 'Jura', sans-serif;
-	background-color: black;
+	background-color: #F5F6D4;
+	color:#493F0B;
 }
 .contents{
 	position:absolute;
@@ -132,16 +133,21 @@ from,to  {}
 .ajustador{
 	position: absolute;
 	height:50px;
-	top:30px;
 	width:50px;
 	text-align: center;
 	line-height: 50px;
 	font-size: 40px;
+	background: rgba(133,219,24,0.8);
 	color:#F5F6D4;
-	background: rgba(205,232,85,0.8);
 	-webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+}
+.nav{
+	display: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
 }
