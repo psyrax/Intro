@@ -147,7 +147,34 @@ from,to  {}
 }
 .nav{
 	display: none;
-	text-align: center;
 	line-height: 50px;
 	font-size: 40px;
+	vertical-align: top;
+}
+.text{
+	display:none;
+	margin:1em;
+}
+.nav ul{
+	list-style-type: none;
+	text-align: center;
+	margin:0 !important;
+	padding:0 !important;
+}
+.nav li{
+	height:50px;
+	display: inline;
+	text-align: center;
+	margin:0 !important;
+	padding:0 1em;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+}
+.active{
+	background-color: #493F0B;
+	color:#F5F6D4;
 }
